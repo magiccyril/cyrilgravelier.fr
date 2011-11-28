@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <title><%= title %></title>
+</head>
+<body>
+  <div class="topbar" data-scrollspy="scrollspy">
+    <div class="topbar-inner">
+      <div class="container">
+        <a class="brand" href="#">Cyril Gravelier</a>
+        <ul class="nav secondary-nav">
+          <li class=""><a href="/">Accueil</a></li>
+          <li class=""><a href="/cv"><abbr title="Curiculum Vitæ">CV</abbr></a></li>
+          <li class=""><a href="/projets">Projets</a></li>
+          <li class=""><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header id="header" class="hero-unit">
+      <h1>
+        Cyril Gravelier
+      </h1>
+      <p>
+        Salut, je suis machin, j'aime ça et ça. Si tu es tombé là c'est que tu as chercher sur Google mon nom.
+      </p>
+    </header>
+
     <%- body %>
-  </body>
+
+  </div>
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script defer src="javascripts/script.js"></script>
+
+</body>
 </html>
