@@ -256,6 +256,11 @@ body {
     }
   }
 
+  #footer {
+    border-radius: 0 0 5px 5px;
+    margin-top: 0;
+  }
+
   .social-links {
     float: left;
     margin: 0;
@@ -303,6 +308,51 @@ body {
       font-weight: normal;
       line-height: 1em;
       padding: 1em;
+    }
+  }
+
+  #skills {
+    .skill-title {
+      width: 140px;
+    }
+    .stars {
+      padding: 9px 0;
+      position: relative;
+      width: 125px;
+
+      .stars0
+      , .stars1
+      , .stars2
+      , .stars3
+      , .stars4
+      , .stars5 {
+        background: url(../images/sprite.png) no-repeat -479px -400px;
+        position: absolute;
+        width: 100%;
+        height: 23px;
+      }
+
+      .stars0 {
+        background-position: -479px -400px;
+        position: absolute;
+        width: 100%;
+        height: 23px;
+      }
+      .stars1 {
+        background-position: -479px -423px;
+      }
+      .stars2 {
+        background-position: -479px -446px;
+      }
+      .stars3 {
+        background-position: -479px -469px;
+      }
+      .stars4 {
+        background-position: -479px -492px;
+      }
+      .stars5 {
+        background-position: -479px -515px;
+      }
     }
   }
 }
