@@ -9,21 +9,9 @@
   <title><%= title %></title>
 </head>
 <body>
-  <div class="topbar" data-scrollspy="scrollspy">
-    <div class="topbar-inner">
-      <div class="container">
-        <a class="brand" href="#">Cyril Gravelier</a>
-        <ul class="nav secondary-nav">
-          <li class=""><a href="/">Accueil</a></li>
-          <li class=""><a href="/cv"><abbr title="Curiculum Vitæ">CV</abbr></a></li>
-          <li class=""><a href="/projets">Projets</a></li>
-          <li class=""><a href="/contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <%- partial('_topbar') %>
 
-  <div class="container">
+  <div class="container" id="standard">
     <header id="header" class="hero-unit">
       <h1>
         Cyril Gravelier
