@@ -17,12 +17,7 @@ exports.contact = function(req, res){
 
 exports.cv = function(req, res){
   res.render('cv', {
-    title: 'CV - Cyril Gravelier'
-  })
-};
-
-exports.projects = function(req, res){
-  res.render('projects', {
-    title: 'Projets - Cyril Gravelier'
+    layout: false
+    , title: 'CV - Cyril Gravelier'
   })
 };
