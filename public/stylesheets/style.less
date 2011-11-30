@@ -268,10 +268,35 @@ body {
 
     li {
       float: left;
-      height: 32px;
       list-style: none;
-      width: 32px;
     }
+    .social-icon {
+      display: block;
+      height: 32px;
+      overflow: hidden;
+      margin: 2px;
+      position: relative;
+      width: 32px;
+
+      span {
+        background: url(../images/sprite.png) no-repeat -599px -400px;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+    }
+    .icon-delicious span { background-position: -700px -400px; }
+    .icon-facebook span { background-position: -732px -400px; }
+    .icon-flickr span { background-position: -764px -400px; }
+    .icon-foursquare span { background-position: -796px -400px; }
+    .icon-github span { background-position: -700px -432px; }
+    .icon-googleplus span { background-position: -732px -432px; }
+    .icon-lastfm span { background-position: -764px -432px; }
+    .icon-linkedin span { background-position: -796px -432px; }
+    .icon-skype span { background-position: -700px -464px; }
+    .icon-tumblr span { background-position: -732px -464px; }
+    .icon-twitter span { background-position: -764px -464px; }
+    .icon-youtube span { background-position: -796px -464px; }
   }
 
   section {
