@@ -32,6 +32,7 @@ body {
   background-image: url(../images/sprite.png) no-repeat;
   height: 400px;
   border-radius: 10px;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -42,14 +43,28 @@ body {
     color: #FFF;
     font-size: 3em;
     font-weight: normal;
-    padding: 2em 0 0 1em;
+    left: 20px;
+    position: absolute;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    top: 50px;
+  }
+
+  .description {
+    color: #FFF;
+    padding: 0 25px;
+    position: absolute;
+    top: 150px;
+    width: 200px;
   }
 
   ul {
     border-bottom: 1px dotted #CCC;
+    left: 25px;
     list-style: none;
-    margin: 10em 5em 1em 2em;
+    margin: 0;
+    position: absolute;
+    top: 250px;
+    width: 200px;
   }
   li {
     border: 1px dotted #CCC;
@@ -111,3 +126,182 @@ body {
 /**
  * Contact
  */
+#contact {
+  h2 {
+    text-align: center;
+  }
+  h3 {
+    margin: 1em 0 2em;
+    text-align: center;
+  }
+  section {
+    position: relative;
+  }
+  .contact-logo-wrapper {
+    height: 200px;
+    position: relative;
+    width: 120px;
+  }
+  .contact-logo, .contact-logo-reflect {
+    background: url(../images/sprite.png) no-repeat;
+    height: 130px;
+    left: 50px;
+    position: absolute;
+    top: 0;
+    width: 120px;
+    z-index: 10;
+  }
+  .contact-logo-reflect {
+    background-position: 0 -530px;
+    top: 72px;
+    z-index: 5;
+  }
+  #contact-mail {
+    background-position: -240px -400px;
+  }
+  #contact-mail-reflect {
+    background-position: -240px -530px;
+  }
+  #contact-phone {
+    background-position: -360px -400px;
+  }
+  #contact-phone-reflect {
+    background-position: -360px -530px;
+  }
+  #contact-twitter {
+    background-position: 0 -400px;
+  }
+  #contact-twitter-reflect {
+    background-position: 0 -530px;
+  }
+  #contact-facebook {
+    background-position: -120px -400px;
+  }
+  #contact-facebook-reflect {
+    background-position: -120px -530px;
+  }
+
+  .contact-details {
+    background: #000000;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    position: absolute;
+    top: 250px;
+    width: 220px;
+
+    .arrow {
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid #000000;
+      display: block;
+      height: 0;
+      left: 50%;
+      margin-left: -5px;
+      position: absolute;
+      top: -5px;
+      width: 0;
+    }
+
+    dl {
+      margin: 0;
+    }
+
+    dt {
+      background-color: #f5f5f5;
+      border-radius: 3px 3px 0 0;
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+      padding: 9px 15px;
+      line-height: 1;
+
+      abbr {
+        font-weight: bold;
+      }
+    }
+    dd {
+      background-color: #ffffff;
+      background-clip: padding-box;
+      border-radius: 0 0 3px 3px;
+      margin: 0;
+      padding: 14px;
+    }
+
+    ul {
+      margin: 0 0 0 1em;
+    }
+  }
+}
+
+/**
+ * CV
+ */
+#cv {
+  background-color: white;
+  margin: 66px auto 0;
+  padding: 0 0 40px;
+
+  #header {
+    background: #F8F8F8;
+    border-bottom: 1px solid #DFDFDF;
+    border-radius: 5px 5px 0 0;
+    padding: 3em 1em 2em;
+
+    hgroup {
+      padding: 14px 0;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+  }
+
+  .social-links {
+    float: left;
+    margin: 0;
+    width: 100%;
+
+    li {
+      float: left;
+      height: 32px;
+      list-style: none;
+      width: 32px;
+    }
+  }
+
+  section {
+    border-bottom: 1px solid #DFDFDF;
+    padding: 30px 0;
+  }
+
+  #experience, #study {
+    article {
+      border-bottom: 1px solid #DFDFDF;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    article.last-item {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h3 {
+      line-height: 12px;
+    }
+    h4 {
+      font-style: italic;
+      font-weight: normal;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+    h5 {
+      background: #EEE;
+      float: right;
+      font-size: 0.8em;
+      font-weight: normal;
+      line-height: 1em;
+      padding: 1em;
+    }
+  }
+}

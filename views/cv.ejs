@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <title><%= title %></title>
+</head>
+<body>
+  <%- partial('_topbar') %>
+
+  <div class="container" id="cv">
+    <header id="header" class="row">
+      <div class="media-grid span3">
+        <a href="">
+          <img class="thumbnail" src="http://placehold.it/90x90" alt="">
+        </a>
+      </div>
+      <hgroup class="span8">
+        <h1>Cyril Gravelier</h1>
+        <h2>Consultant Web bla bla bla</h2>
+      </hgroup>
+      <aside class="span4">
+        <ul class="social-links">
+          <li>twitter</li>
+          <li>facebook</li>
+          <li>linkdin</li>
+          <li>github</li>
+          <li>flickr</li>
+          <li>skype</li>
+        </ul>
+        <ul class="unstyled">
+          <li>magiccyril@gmail.com</li>
+          <li>+33 6 87 90 79 63</li>
+          <li><a href="http://cyrilgravelier.fr">cyrilgravelier.fr</a></li>
+        </ul>
+      </aside>
+    </header>
+
+    <section class="row">
+      <div class="span4 offset1">
+        <h2>Titre</h2>
+      </div>
+      <div class="span10">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </section>
+
+    <section id="experience" class="row">
+      <div class="span4 offset1">
+        <h2>Expériences</h2>
+      </div>
+      <div class="span10">
+        <article>
+          <hgroup>
+            <h5><abbr title"Mars">Mar.</abbr> 2011 &rarr; maintenant</h5>
+            <h3>Web Developer</h3>
+            <h4>Quiksilver Europe</h4>
+          </hgroup>
+
+          <ul>
+            <li>Migration de la plateforme e-commerce sous DemandWare</li>
+            <li>Réalisation d'un système de taggage de séquences dans une vidéo</li>
+            <li>Refonte de sites marketings</li>
+          </ul>
+        </article>
+
+        <article>
+          <hgroup>
+            <h5><abbr title"Novembre">Nov.</abbr> 2009 &rarr; maintenant</h5>
+            <h3>Vacataire</h3>
+            <h4>IUT Informatique de l'Université Bordeaux I</h4>
+          </hgroup>
+
+          <ul>
+            <li>Élaboration et animation de cours en Licence professionnelle</li>
+            <li>Cours de Web : HTML, CSS, Javascript et jQuery</li>
+          </ul>
+        </article>
+
+
+        <article>
+          <hgroup>
+            <h5><abbr title="Octobre">Otc.</abbr> 2008 &rarr; <abbr title="Mars">Mar.</abbr> 2011</h5>
+            <h3>Consultant Web</h3>
+            <h4>Clever Age</h4>
+          </hgroup>
+
+          <ul>
+            <li>
+              Expertise Drupal (
+                <abbr title="Communauté Urbaine de Bordeaux">CUB</abbr>
+                , Mairie de Bordeaux
+                , Aéroport de Bordeaux
+                , InfoTBC
+                , ...
+              )
+            </li>
+            <li>Mission de conseil</li>
+            <li>Chef de projet technique</li>
+            <li>Encadrement de stagiaires</li>
+            <li>Développement Web : Drupal, Symfony</li>
+          </ul>
+        </article>
+
+        <article>
+          <hgroup>
+            <h5><abbr title="Octobre">Otc.</abbr> 2007 &rarr; <abbr title="Septembre">Sep.</abbr> 2008</h5>
+            <h3>Développeur Web (en alternance)</h3>
+            <h4>Systonic</h4>
+          </hgroup>
+
+          <ul>
+            <li>Intégration de CMS (Drupal, Joomla, et CMS interne)</li>
+            <li>Intégration graphique</li>
+            <li>Développement de modules, et d'outils spécifiques</li>
+            <li>Encadrement de stagiaires</li>
+          </ul>
+        </article>
+
+        <article>
+          <hgroup>
+            <h5><abbr title="Avril">Avr.</abbr> 2007 &rarr; <abbr title="Juin">Jui.</abbr> 2007</h5>
+            <h3>Stage de fin de <abbr title="Diplome Universitaire Technologique">DUT</abbr></h3>
+            <h4>XiTi (AT Internet)</h4>
+          </hgroup>
+
+          <ul>
+            <li>Développement de modules complémentaires</li>
+          </ul>
+        </article>
+
+        <article class="last-item">
+          <hgroup>
+            <h5><abbr title="Octobre">Oct.</abbr> 2006 &rarr; <abbr title="Avril">Avr.</abbr> 2007</h5>
+            <h3>Développeur Web</h3>
+            <h4>WAAM Group</h4>
+          </hgroup>
+
+          <ul>
+            <li>Création d'une plateforme de vente d'œuvres d'art.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" class="row">
+      <div class="span4 offset1">
+        <h2>Compétences</h2>
+      </div>
+
+      <div class="span10">
+        <div class="row">
+          <article class="span10">
+            <h3>Frontend</h3>
+            <table>
+              <tr>
+                <td class="skill-title">HTML</td>
+                <td class="stars">5/5</td>
+                <td>xhtml, html 5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">CSS</td>
+                <td class="stars">5/5</td>
+                <td>CSS 3, Sass, Compass, Less, Blueprint, Bootstrap</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Javascript</td>
+                <td class="stars">4/5</td>
+                <td>jQuery, Object Oriented Javascript, Prototype</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Accessibilité</td>
+                <td class="stars">3/5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="skill-title">Sémantique</td>
+                <td class="stars">3/5</td>
+                <td>RDFa, microformat, HTML Outline</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Référencement</td>
+                <td class="stars">2/5</td>
+                <td></td>
+              </tr>
+            </table>
+          </article>
+
+          <article class="span10">
+            <h3>Backend</h3>
+            <table>
+              <tr>
+                <td class="skill-title">PHP</td>
+                <td class="stars">4/5</td>
+                <td>PHP, Object Oriented PHP</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Node.js</td>
+                <td class="stars">3/5</td>
+                <td>ExpressJS</td>
+              </tr>
+              <tr>
+                <td class="skill-title">ASP / .Net</td>
+                <td class="stars">2/5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="skill-title">Python</td>
+                <td class="stars">1/5</td>
+                <td>Django</td>
+              </tr>
+            </table>
+          </article>
+        </div>
+
+        <div class="row">
+          <article class="span5">
+            <h3>CMS / Framework</h3>
+            <table>
+              <tr>
+                <td class="skill-title">Drupal</td>
+                <td class="stars">5/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Symfony</td>
+                <td class="stars">3/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Code Igniter</td>
+                <td class="stars">2/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">eZ Publish</td>
+                <td class="stars">1/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Joomla</td>
+                <td class="stars">2/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Wordpress</td>
+                <td class="stars">1/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Magento</td>
+                <td class="stars">1/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Django</td>
+                <td class="stars">1/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">DemandWare</td>
+                <td class="stars">1/5</td>
+              </tr>
+            </table>
+          </article>
+
+          <article class="span5">
+            <h3>Mobile</h3>
+            <table>
+              <tr>
+                <td class="skill-title">Android</td>
+                <td class="stars">3/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">iOS / Objective C</td>
+                <td class="stars">1/5</td>
+              </tr>
+            </table>
+          </article>
+
+          <article class="span5">
+            <h3>Databases</h3>
+            <table>
+              <tr>
+                <td class="skill-title">SQL</td>
+                <td class="stars">4/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">No-SQL</td>
+                <td class="stars">2/5</td>
+              </tr>
+            </table>
+          </article>
+
+          <article class="span5">
+            <h3>SCM</h3>
+            <table>
+              <tr>
+                <td class="skill-title">SVN</td>
+                <td class="stars">2/5</td>
+              </tr>
+              <tr>
+                <td class="skill-title">Git</td>
+                <td class="stars">3/5</td>
+              </tr>
+            </table>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="study" class="row">
+      <div class="span4 offset1">
+        <h2>Formations</h2>
+      </div>
+      <div class="span10">
+        <article>
+          <hgroup>
+            <h5>2007 - 2008</h5>
+            <h3>Licence professionnelle</h3>
+            <h4>Assistant chef de projet</h4>
+          </hgroup>
+
+          <p>
+            Licence professionnelle système d’information, assistant chef de projet (Bordeaux 1).<br/>
+            Cette année a été effectuée en alternance dans l'entreprise Systonic
+          </p>
+        </article>
+
+        <article>
+          <hgroup>
+            <h5>2005 - 2007</h5>
+            <h3>DUT Informatique</h3>
+            <h4></h4>
+          </hgroup>
+
+          <p>Année effectuée à l'IUT Informatique de Bordeaux I.</p>
+        </article>
+
+        <article>
+          <hgroup>
+            <h5>2003 - 2005</h5>
+            <h3>1ère année DEUG</h3>
+            <h4>Sciences économique et de gestion</h4>
+          </hgroup>
+
+          <p>Cette première année effectuée à l'Université Bordeaux IV Montesquieu m'a permis d'acquérir quelques notions de gestion, de micro et macro économie.</p>
+        </article>
+
+        <article class="last-item">
+          <hgroup>
+            <h5>2003</h5>
+            <h3>Baccalauréat</h3>
+            <h4>Série ES</h4>
+          </hgroup>
+
+          <p>Obtenue au Lycée Sud Médoc, Le Taillan Médoc ( 33 ).</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <script defer src="javascripts/script.js"></script>
+
+</body>
+</html>
