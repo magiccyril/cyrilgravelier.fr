@@ -38,17 +38,10 @@ $(document).ready(function() {
     .each(function(i) {
       var card = $(this);
 
-      var reflexion = $('<div />');
-      reflexion
-        .attr({
-          class: 'reflexion'
-          , id: 'reflexion-'+ card.attr('id')
-        })
-        .css({
-          left: card.width() * i + 20 * (i + 1)
-        })
-        .hide()
-        .insertAfter(card);
+      var shadow = card.next('.card-shadow');
+      shadow.hide();
+      var reflexion = shadow.next('.reflexion');
+      reflexion.hide();
 
       // get all childs.
       var childs = card.find('*');
@@ -60,6 +53,7 @@ $(document).ready(function() {
       // and wait to display it with fading.
       card.delay(i * 800).fadeIn();
       reflexion.delay(i * 800).fadeIn();
+      shadow.delay(i * 800).fadeIn();
     })
     // on mouse enter fadeIn all childs.
     .bind('mouseenter', function(e) {
