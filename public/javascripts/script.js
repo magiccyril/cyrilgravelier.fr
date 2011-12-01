@@ -31,6 +31,13 @@ $(document).ready(function() {
   print();
 
   /**
+   * Twipsy
+   */
+  $('.tooltip').twipsy({
+    html: true
+  });
+
+  /**
    * Homepage cards.
    */
   var cards = $('.card');
