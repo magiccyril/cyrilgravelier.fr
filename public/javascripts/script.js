@@ -17,6 +17,20 @@ $(document).ready(function() {
   });
 
   /**
+   * If there's "print" in hash then print.
+   */
+  var print = function() {
+    if (-1 !== window.location.hash.indexOf('print')) {
+      window.location.hash = window.location.hash.replace('print', '');
+      window.print();
+    }
+  }
+  $(window).bind('hashchange', function() {
+    print();
+  });
+  print();
+
+  /**
    * Homepage cards.
    */
   var cards = $('.card');
