@@ -1,0 +1,42 @@
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .social-links
+  , .topbar
+  , .stars5
+  , .stars4
+  , .stars3
+  , .stars2
+  , .stars1
+  , .stars0 {
+    display: none;
+  }
+
+  #cv {
+    #header {
+      padding: 0 1em;
+    }
+    #footer {
+      border-bottom: 0;
+      padding: 1em 1em 0;
+    }
+
+    section {
+      padding: 20px 0 10px;
+    }
+
+    #experience, #study {
+      article {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+      }
+    }
+
+    #skills {
+      page-break-before: always;
+    }
+  }
+}
