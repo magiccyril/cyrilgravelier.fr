@@ -4,14 +4,8 @@
     padding: 0;
   }
 
-  .social-links
-  , .topbar
-  , .stars5
-  , .stars4
-  , .stars3
-  , .stars2
-  , .stars1
-  , .stars0 {
+  .topbar,
+  .social-links {
     display: none;
   }
 
@@ -22,10 +16,18 @@
     #footer {
       border-bottom: 0;
       padding: 1em 1em 0;
+
+      .media-grid a {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin-bottom: 0;
+      }
     }
 
     section {
-      padding: 20px 0 10px;
+      padding: 10px 0 0;
     }
 
     #experience, #study {
@@ -33,10 +35,37 @@
         margin-bottom: 20px;
         padding-bottom: 0;
       }
+      h4 {
+        margin-bottom: 12px;
+      }
+    }
+    #study {
+      td {
+        height: auto;
+        padding: 5px 10px;
+      }
+      .first-item td {
+        padding: 0 10px 5px;
+      }
     }
 
     #skills {
       page-break-before: always;
+
+      table {
+        margin-bottom: 0;
+      }
+
+      .stars {
+        .stars0
+        , .stars1
+        , .stars2
+        , .stars3
+        , .stars4
+        , .stars5 {
+          display: none;
+        }
+      }
     }
   }
 }
