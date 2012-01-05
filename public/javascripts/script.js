@@ -88,6 +88,22 @@ $(document).ready(function() {
   }
 
   /**
+   * CV.
+   */
+  $('#cv .tooltip').each(function(i) {
+    var td_stars_tooltip = $(this);
+    var td_title = td_stars_tooltip.prev('.skill-title');
+    td_title.data('tooltip', td_stars_tooltip);
+    td_title
+      .bind('mouseenter', function(e) {
+        $(this).data('tooltip').twipsy('show');
+      })
+      .bind('mouseleave', function(e) {
+        $(this).data('tooltip').twipsy('hide');
+      })
+  });
+
+  /**
    * Contact.
    */
   $('#contact section')
