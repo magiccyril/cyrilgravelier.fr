@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:foaf="http://xmlns.com/foaf/0.1/">
 <head>
   <meta charset="utf-8">
 
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/style.css" />
+
+  <link rel="foaf:primaryTopic foaf:maker" href="#me" />
 
   <title><%= title %></title>
 </head>
@@ -12,15 +14,15 @@
   <%- partial('_topbar') %>
 
   <div class="container">
-    <header id="header" class="row vcard">
+    <header id="header" class="row vcard" itemscope itemtype="http://data-vocabulary.org/Person" typeof="foaf:Person" about="#me">
       <div class="media-grid span3">
         <a href="/" class="tooltip" title="Salut !">
-          <img class="thumbnail" src="http://www.gravatar.com/avatar/2f9e679e419b245e05e6f7bf6606499a?size=90" alt="Photo Cyril Gravelier" />
+          <img class="thumbnail photo" src="http://www.gravatar.com/avatar/2f9e679e419b245e05e6f7bf6606499a?size=90" alt="Photo Cyril Gravelier" itemprop="photo" />
         </a>
       </div>
       <hgroup class="span8">
-        <h1 class="fn">Cyril Gravelier</h1>
-        <h2 class="title">Consultant Web</h2>
+        <h1 class="fn" itemprop="name" property="foaf:name">Cyril Gravelier</h1>
+        <h2 class="title" itemprop="title">Consultant Web</h2>
       </hgroup>
       <aside class="span4">
         <ul class="social-links">
@@ -32,9 +34,12 @@
           <li><a class="social-icon icon-flickr tooltip" href="http://www.flickr.com/magiccyril" title="Flickr"><span></span>flickr</a></li>
         </ul>
         <ul class="unstyled">
-          <li><span class="spam email"><span class="u">cyril.gravelier</span>[at]<span class="d">gmail.com</span></li>
-          <li class="tel">+33 6 87 90 79 63</li>
-          <li><a class="url" href="http://cyrilgravelier.fr">cyrilgravelier.fr</a></li>
+          <li>
+            <span class="spam email">
+            <span class="u">cyril.gravelier</span>[at]<span class="d">gmail.com</span>
+          </li>
+          <li class="tel" property="foaf:phone">+33 6 87 90 79 63</li>
+          <li><a class="url" href="http://cyrilgravelier.fr" rel="foaf:homepage">cyrilgravelier.fr</a></li>
         </ul>
       </aside>
     </header>
@@ -391,7 +396,7 @@
       <article class="span9">
         <h3>Informations personnelles</h3>
         <ul>
-          <li><%= age %> ans, titulaire du permis B</li>
+          <li><span property="foaf:age"><%= age %></span> ans, titulaire du permis B</li>
           <li>Réalisation de projets perso : <a href="http://tempo.18ruedivona.eu">Tempo</a>, <a href="http://github.com/magiccyril/Divona-standings">Fifa Standings</a>, etc. <a href="http://github.com/magiccyril">voir GitHub</a></li>
           <li>Passionné de photographie, et sport (Basket, Vélo, Natation, Tennis, Surf, &hellip;)</li>
           <li>Curieux, ambitieux, passionné, rigoureux, maniaque, (psychorigide ?)</li>
