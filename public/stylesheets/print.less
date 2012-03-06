@@ -4,6 +4,11 @@
     padding: 0;
   }
 
+  a.print-link:link:after, a.print-link:visited:after {
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+
   .no-print,
   .topbar,
   .social-links {
@@ -24,6 +29,10 @@
 
       ul {
         margin-bottom: 0;
+      }
+
+      aside {
+        display: none;
       }
     }
 
