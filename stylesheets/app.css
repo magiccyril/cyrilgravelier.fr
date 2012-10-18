@@ -35,7 +35,7 @@ a:focus {
 .has-tip:hover { border-bottom: inherit; }
 
 .icon {
-  background: url(http://img.cyrilgravelier.fr/images/sprites.png) no-repeat left top;
+  background: url(../images/sprites.png) no-repeat left top;
   display: inline-block;
   height: 27px;
   margin-right: 7px;
@@ -83,7 +83,7 @@ a:focus {
   width: 80px;
 }
   .stars span {
-    background: url(http://img.cyrilgravelier.fr/images/sprites.png) no-repeat left top;
+    background: url(../images/sprites.png) no-repeat left top;
     left: 0;
     position: absolute;
     width: 100%;
