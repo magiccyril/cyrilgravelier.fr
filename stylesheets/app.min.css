@@ -4,7 +4,7 @@ a:hover,
 a:focus{color:#FA633B;text-decoration:underline;}
 .has-tip{border-bottom:inherit;}
 .has-tip:hover{border-bottom:inherit;}
-.icon{background:url(../images/sprites.png) no-repeat left top;display:inline-block;height:27px;margin-right:7px;width:27px;}
+.icon{background:url(http://img.cyrilgravelier.fr/images/sprites.png) no-repeat left top;display:inline-block;height:27px;margin-right:7px;width:27px;}
 .icon-group{background-position:0 -231px;}
 .icon-code{background-position:0 -154px;}
 .icon-tools{background-position:0 -577px;}
@@ -15,7 +15,7 @@ a:focus{color:#FA633B;text-decoration:underline;}
 .icon-mini-mail{background-position:0 -308px;height:14px;width:14px;}
 .icon-mini-twitter{background-position:0 -436px;height:14px;width:14px;}
 .stars{display:inline-block;height:24px;position:relative;width:80px;}
-.stars span{background:url(../images/sprites.png) no-repeat left top;left:0;position:absolute;width:100%;height:100%;}
+.stars span{background:url(http://img.cyrilgravelier.fr/images/sprites.png) no-repeat left top;left:0;position:absolute;width:100%;height:100%;}
 .three-stars span{background-position:-79px -654px;}
 .two-stars span{background-position:-53px -654px;}
 .one-stars span{background-position:-27px -654px;}
