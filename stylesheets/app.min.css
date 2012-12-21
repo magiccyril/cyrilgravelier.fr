@@ -24,7 +24,7 @@ header h1{color:#fff;font-weight:500;}
 header h4{color:#fff;font-weight:300;}
 #skills{}
 #skills article{margin:0 0 22px 0;}
-#skills aside{margin-top:76px;}
+#skills aside{margin-top:68px;}
 #skills dl{border-top:1px solid #DDD;overflow:hidden;}
 #skills dt{border-bottom:1px solid #DDD;color:#222;float:left;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-weight:normal;padding:12px 0;text-indent:3px;text-rendering:optimizeLegibility;}
 #skills dd{border-bottom:1px solid #DDD;float:right;padding:7px 0;text-align:right;}
@@ -45,8 +45,14 @@ footer a{color:#FFF;font-style:italic;}
 #qrcode{margin-top:44px;}
 #notes{border-top:1px solid #333;padding:22px 0;}
 #notes article p{border-bottom:1px dotted #CCC;height:2.6em;line-height:2.6;margin-bottom:17px;width:auto;}
-@media print{.stars{height:auto;}
+@media print{#top{position:absolute;text-indent:-9000px;}
+header{margin-top:-12px;padding:0;}
+.stars{height:auto;}
+#summary h2{margin-top:0;}
+#skills h2{margin-bottom:0;margin-top:0;}
+#skills aside{margin-top:40px;}
 #skills dd{padding:12px 0;}
+#skills .icon{display:none;}
 .contact-links a[href]:after{content:"";}
 #qrcode-container:before{content:" (" attr(title) ")";}
 #qrcode{margin-top:24px;}
