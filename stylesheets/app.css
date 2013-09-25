@@ -120,7 +120,7 @@ header {
    Skills
 ----------------------------------------- */
 #skills {
-
+  page-break-after: always;
 }
   #skills article {
     margin: 0 0 22px 0;
@@ -153,6 +153,9 @@ header {
 /* -----------------------------------------
    Experiences
 ----------------------------------------- */
+#experiences {
+  page-break-after: always;
+}
 #experiences article {
   display: table;
   width: 100%;

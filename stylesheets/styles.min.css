@@ -23,12 +23,13 @@ a:focus{color:#FA633B;text-decoration:underline;}
 header{background:#2ba6cb;padding:22px 0;}
 header h1{color:#fff;font-weight:500;}
 header h4{color:#fff;font-weight:300;}
-#skills{}
+#skills{page-break-after:always;}
 #skills article{margin:0 0 22px 0;}
 #skills aside{margin-top:68px;}
 #skills dl{border-top:1px solid #DDD;overflow:hidden;}
 #skills dt{border-bottom:1px solid #DDD;color:#222;float:left;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;font-weight:normal;padding:12px 0;text-indent:3px;text-rendering:optimizeLegibility;}
 #skills dd{border-bottom:1px solid #DDD;float:right;padding:7px 0;text-align:right;}
+#experiences {page-break-after:always;}
 #experiences article{display:table;width:100%;}
 #experiences aside{display:table-cell;float:none;text-align:right;vertical-align:middle;}
 #experiences aside img{opacity:0.33;-webkit-transition:all 1s ease-in-out;-moz-transition:all 1s ease-in-out;-o-transition:all 1s ease-in-out;-ms-transition:all 1s ease-in-out;transition:all 1s ease-in-out;}
