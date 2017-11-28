@@ -1,4 +1,6 @@
+.DS_Store
+bower_components
 node_modules
 npm-debug.log
-public/stylesheets/style.css
-public/stylesheets/print.css
+css
+scss/.sass-cache
