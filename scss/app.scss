@@ -71,6 +71,10 @@
 //@include motion-ui-transitions;
 //@include motion-ui-animations;
 
+.container {
+  @include xy-grid-container;
+}
+
 #site-header {
   margin-top: 3rem;
   text-align: center;
