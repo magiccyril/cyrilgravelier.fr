@@ -89,6 +89,7 @@
   
   h1 {
     border: 1px solid $dark-gray;
+    border-radius: 5px;
     display: inline-block;
     letter-spacing: .5rem;
     padding: .5rem 2rem;
@@ -254,6 +255,18 @@
   
   #main {
     margin-bottom: 0;
+
+    .first-col, .second-col {
+      margin: 0;
+    }
+    .second-col {
+      a[href]:after {
+        content: none;
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+    }
   }
   
   .timeline-item {
@@ -274,6 +287,21 @@
         small {
           display: inline;
         }
+      }
+    }
+  }
+
+  .label {
+    @include label;
+
+    background: $label-background !important;
+    color: $label-color !important;
+
+    @each $name, $color in $label-palette {
+      &.#{$name} {
+        background: $color !important;
+        color: color-pick-contrast($color, ($label-color, $label-color-alt));
+        color-adjust: exact !important;
       }
     }
   }

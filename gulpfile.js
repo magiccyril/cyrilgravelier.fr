@@ -1,25 +1,43 @@
-var gulp = require('gulp');
-var $    = require('gulp-load-plugins')();
+const { src, dest, watch, series } = require('gulp');
+const browser = require('browser-sync');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
-var sassPaths = [
-  'bower_components/normalize.scss/sass',
-  'bower_components/foundation-sites/scss',
-  'bower_components/motion-ui/src'
-];
+sass.compiler = require('node-sass');
 
-gulp.task('sass', function() {
-  return gulp.src('scss/app.scss')
-    .pipe($.sass({
-      includePaths: sassPaths,
-      outputStyle: 'compressed' // if css compressed **file size**
-    })
-      .on('error', $.sass.logError))
-    .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
-    }))
-    .pipe(gulp.dest('css'));
-});
+// Compile Sass into CSS
+const css = () => (
+  src('./scss/**/*.scss')
+    .pipe(sass({
+      includePaths: [
+        'node_modules/foundation-sites/scss',
+      ]
+    }).on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(dest('./css'))
+    .pipe(browser.reload({ stream: true }))
+);
 
-gulp.task('default', ['sass'], function() {
-  gulp.watch(['scss/**/*.scss'], ['sass']);
-});
+// Start a server with BrowserSync to preview the site in
+const server = (done) => {
+  browser.init({
+    server: {
+      baseDir: "./"
+  }}, done);
+}
+
+// Reload the browser with BrowserSync
+const reload = () => {
+  browser.reload();
+}
+
+// Watch for changes to static assets, pages, Sass, and JavaScript
+const watchFiles = () => {
+  watch('./**/*.html').on('all', reload);
+  watch('./scss/**/*.scss').on('all', css);
+}
+
+exports.default = (done) => {
+  watchFiles()
+  server(done);
+};
