@@ -37,6 +37,10 @@ const watchFiles = () => {
   watch('./scss/**/*.scss').on('all', css);
 }
 
+exports.build = (done) => {
+  css();
+  done();
+}
 exports.default = (done) => {
   watchFiles()
   server(done);
