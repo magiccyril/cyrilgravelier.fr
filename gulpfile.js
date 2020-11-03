@@ -1,6 +1,7 @@
 const { src, dest, watch, series } = require('gulp');
 const browser = require('browser-sync');
 const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 
 sass.compiler = require('node-sass');
@@ -8,14 +9,17 @@ sass.compiler = require('node-sass');
 // Compile Sass into CSS
 const css = () => (
   src('./scss/**/*.scss')
-    .pipe(sass({
-      includePaths: [
-        'node_modules/foundation-sites/scss',
-      ]
-    }).on('error', sass.logError))
-    .pipe(autoprefixer())
-    .pipe(dest('./css'))
-    .pipe(browser.reload({ stream: true }))
+  .pipe(sourcemaps.init())
+  .pipe(sass({
+    outputStyle: 'compressed',
+    includePaths: [
+      'node_modules/foundation-sites/scss',
+    ]
+  }).on('error', sass.logError))
+  .pipe(autoprefixer())
+  .pipe(sourcemaps.write())
+  .pipe(dest('./css'))
+  .pipe(browser.reload({ stream: true }))
 );
 
 // Start a server with BrowserSync to preview the site in
