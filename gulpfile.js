@@ -9,7 +9,7 @@ sass.compiler = require('node-sass');
 // Compile Sass into CSS
 const css = () => (
   src('./scss/**/*.scss')
-  .pipe(sourcemaps.init())
+  //.pipe(sourcemaps.init())
   .pipe(sass({
     outputStyle: 'compressed',
     includePaths: [
@@ -17,7 +17,7 @@ const css = () => (
     ]
   }).on('error', sass.logError))
   .pipe(autoprefixer())
-  .pipe(sourcemaps.write())
+  //.pipe(sourcemaps.write())
   .pipe(dest('./css'))
   .pipe(browser.reload({ stream: true }))
 );
