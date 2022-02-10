@@ -12,7 +12,7 @@
     "gulp-autoprefixer": "^7.0.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "start": "gulp",
